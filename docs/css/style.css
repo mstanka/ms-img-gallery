@@ -235,6 +235,11 @@ p {
     padding: 2%;
   }
 
+  .picture:hover {
+    transform: none;
+    transition: none;
+  }
+
   .details {
     width: 90%;
     padding-bottom: 1rem;
@@ -242,6 +247,10 @@ p {
 
   .name, .description, .date {
     text-align: center;
+  }
+  
+  .description {
+    margin-bottom: 0;
   }
 
   .image {

@@ -12,6 +12,15 @@ const context = {
       date: "2017-04",
     },
     {
+      link: "http://www.uphillhiking.cz/category/rusko/kamcatka/",
+      alt: "Kamchatka, Russia",
+      image: "http://uphillhiking.cz/wp-content/uploads/2017/08/IMG_1114w.jpg",
+      name: "Kamchatka, Russia",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam amet optio, asperiores corrupti animi vitae necessitatibus et laudantium debitis delectus.",
+      date: "2017-07",
+    },
+    {
       link: "hhttp://www.uphillhiking.cz/category/svycarsko/",
       alt: "Switzerland",
       image:
