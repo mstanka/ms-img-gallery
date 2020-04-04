@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Uphillhiking Gallery</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="../handlebars.min.js"></script>
+  <script id="templateHB" type="text/x-handlebars-template">
+    {{#each pictures}}
+      <article class="picture">
+        <a href="{{this.link}}" alt="{{this.alt}}">
+          <img class="image" src="{{this.image}}" alt="{{this.name}}">
+        </a>
+          <section class="details">
+            <h2 class="name">{{this.name}}</h2>
+            <p class="description">{{this.description}}</p>
+            <p class="date">{{this.date}}</p>         
+          </section>        
+      </article>
+    {{/each}}
+  </script>
+</head>
+
+<body id="home">
+  <!--Navbar-->
+  <nav class="container bg-dark navbar">
+    <a href="#home">
+      <div class="text-primary">        
+        <svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 512 512'>
+          <rect x='48' y='80' width='416' height='352' rx='48' ry='48'
+          style='fill:none;stroke:#ff8e3c;stroke-linejoin:round;stroke-width:32px' />
+          <circle cx='336' cy='176' r='32' style='fill:none;stroke:#ff8e3c;stroke-miterlimit:10;stroke-width:32px' />
+          <path d='M304,335.79,213.34,245.3A32,32,0,0,0,169.47,244L48,352'
+            style='fill:none;stroke:#ff8e3c;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px' />
+          <path d='M224,432,347.34,308.66a32,32,0,0,1,43.11-2L464,368'
+            style='fill:none;stroke:#ff8e3c;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px' />
+        </svg>  
+      </div>
+    </a>
+    <ul>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--Showcase-->
+  <header class="showcase bg-dark">
+    <div class="showcase-content">
+      <h1 class="l-heading"><span class="text-primary">Uphillhiking </span>Gallery</h1>
+      <p class="lead">Welcome! Here you can find some pictures from my hiking trips.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <article id="gallery" class="bg-dark">
+      <section class="container" id="information">
+        <!---------Pictures--------->
+        <article class="picture">  
+        </article>    
+        
+      </section>
+    </article>
+    <!---------Contact---------->
+    <article id="contact" class="bg-primary contact">
+      <h2 class="m-heading text-center">For more please visit</h2>
+      <section class="container social-icons">        
+        <div class="social-icon">
+          <a href="http://www.uphillhiking.cz/" aria-label="Visit website uphillhiking.cz" target="_blank"
+            rel="noreferrer noopener">
+            <i class="fab fa-internet-explorer fa-2x"></i>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="https://www.instagram.com/m_stanka_na_kopec/" aria-label="Follow me on Instagram" target="_blank"
+            rel="noreferrer noopener">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+      </section>
+
+    </article>      
+  </main>
+
+  <!--Footer-->
+  <footer id="main-footer" class="container bg-dark text-center">
+    <div class="container">
+      <div class="text-small">
+        <p>&copy; 2020 <a href="http://www.marketastankova.com">marketa stankova</a></p>
+      </div>
+    </div>
+  </footer>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
