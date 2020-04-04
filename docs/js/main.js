@@ -21,7 +21,7 @@ const context = {
       date: "2017-07",
     },
     {
-      link: "hhttp://www.uphillhiking.cz/category/svycarsko/",
+      link: "http://www.uphillhiking.cz/category/svycarsko/",
       alt: "Switzerland",
       image:
         "http://uphillhiking.cz/wp-content/uploads/2018/08/IMG_3621-2-web.jpg",
