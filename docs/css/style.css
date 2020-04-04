@@ -17,6 +17,7 @@ body {
   font-family: 'Gotu', sans-serif;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.4rem;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -149,7 +150,7 @@ p {
 }
 
 .picture:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: .5s ease-in-out;
 }
 
